@@ -36,3 +36,145 @@ img {
     height: 100%;
     width: auto;
 }
+
+body {
+    background-color: var(--Off-white);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 2.8rem 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 8.9rem 8.9rem 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Container */
+.container {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.522);
+    z-index: 99;
+    pointer-events: none;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    transition: 0.3s linear;
+}
+
+
+
+/****************** 
+      MOBILE NAV
+******************/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.8rem;
+}
+
+.nav__logo {
+    height: 100%;
+}
+
+.nav__items-container {
+    display: none;
+}
+
+#menu-btn {
+    width: 4rem;
+    height: auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        height: 3.99rem;
+    }
+    .nav__items-container {
+        display: flex;
+        width: 43.1rem;
+        height: 2.6rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+        color: var(--Dark-grayish-blue);
+    }
+
+    .nav-item:hover {
+        color: var(--Soft-red);
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+
+
+
+
+
+/****************** 
+SLIDE OUT MOBILE MENU
+******************/
+.mobile-menu {
+    background-color: var(--Off-white);
+    height: 100vh;
+    padding: 2.8rem 2.65rem;
+    position: absolute;
+    right: -24rem;
+    top: 0;
+    transition: all 0.3s;
+    width: 25.6rem;
+    z-index: 100;
+    /* display: none; */
+}
+
+
+
+
+/* Close Button */
+.close-btn-wrapper {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+#close-btn {
+    cursor: pointer;
+    width: 3.41rem;
+}
+
+
+
+/* Menu Items */
+.menu-items-container {
+    display: flex;
+    flex-direction: column;
+    height: 21.6rem;
+    gap: 2.4rem;
+    margin-top: 8.6rem;
+}
+
+.menu-item {
+    font-size: 1.8rem;
+}

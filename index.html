@@ -14,5 +14,98 @@
 
 		<title>Frontend Mentor | News homepage</title>
 	</head>
-	<body></body>
+	<body>
+		<main class="hero container grid">
+			<picture class="hero__img-container">
+				<source media="(max-width: 649px)" srcset="assets/images/image-web-3-mobile.jpg" />
+				<source media="(min-width: 650px)" srcset="assets/images/image-web-3-desktop.jpg" />
+				<img class="hero__img" src="assets/images/image-web-3-mobile.jpg" alt="" />
+			</picture>
+
+			<div class="hero__heading-container">
+				<h1 class="hero-heading">The Bright Future of Web 3.0?</h1>
+			</div>
+
+			<div class="hero__tagline-container">
+				<p class="hero-tagline">
+					We dive into the next evolution of the web that claims to put the power of the
+					platforms back into the hands of the people. But is it really fulfilling its
+					promise?
+				</p>
+				<a class="hero__btn" href="#">Read More</a>
+			</div>
+
+			<!-- New Articles Container -->
+			<div class="new-article__container">
+				<h1 class="heading">New</h1>
+				<div class="articles-container">
+					<div class="first-article__container">
+						<h2 class="article-heading">Hydrogen VS Electric Cars</h2>
+						<p class="article-taglines">
+							Will hydrogen-fueled cars ever catch up to EVs?
+						</p>
+					</div>
+					<div class="second-article__container">
+						<h2 class="article-heading">The Downsides of AI Artistry</h2>
+						<p class="article-taglines">
+							What are the possible adverse effects of on-demand AI image generation?
+						</p>
+					</div>
+					<div class="third-article__container">
+						<h2 class="article-heading">Is VC Funding Drying Up?</h2>
+						<p class="article-taglines">
+							Private funding by VC firms is down 50% YOY. We take a look at what that
+							means.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Top three articles -->
+			<div class="top-article one">
+				<img
+					class="top-article__img"
+					src="assets/images/image-retro-pcs.jpg"
+					alt="retro pc"
+				/>
+				<div class="top-article_content">
+					<h1 class="top-article__number">01</h1>
+					<h2 class="top-article__heading">Reviving Retro PCs</h2>
+					<p class="top-article__tagline">
+						What happens when old Pcs are given modern upgrades?
+					</p>
+				</div>
+			</div>
+
+			<div class="top-article two">
+				<img
+					class="top-article__img"
+					src="assets/images/image-top-laptops.jpg"
+					alt="laptop"
+				/>
+				<div class="top-article_content">
+					<h1 class="top-article__number">02</h1>
+					<h2 class="top-article__heading">Top 10 Laptops of 2022</h2>
+					<p class="top-article__tagline">
+						Our best picks for various needs and budgets.
+					</p>
+				</div>
+			</div>
+
+			<div class="top-article three">
+				<img
+					class="top-article__img"
+					src="assets/images/image-gaming-growth.jpg"
+					alt="ps4 controller"
+				/>
+				<div class="top-article_content">
+					<h1 class="top-article__number">03</h1>
+					<h2 class="top-article__heading">The Growth of Gaming</h2>
+					<p class="top-article__tagline">
+						How the pandemic has sparked fresh opportunities.
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>

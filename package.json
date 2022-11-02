@@ -1,0 +1,22 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohit-k-Mummon/news-homepage-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohit-k-Mummon/news-homepage-main/issues"
+  },
+  "homepage": "https://github.com/Mohit-k-Mummon/news-homepage-main#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}

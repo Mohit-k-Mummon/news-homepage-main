@@ -46,14 +46,13 @@ body {
     background-color: var(--Almost-white);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    height: 100%;
-    overflow-x: hidden;
+    height: max-content;
     padding: 2.8rem 1.6rem;
 }
 
 @media screen and (min-width: 1175px) {
     body {
-        padding: 8.9rem 2rem 0;
+        padding: 8.9rem 2rem;
     }
 }
 
@@ -71,7 +70,7 @@ a {
 
 /* Overlay */
 .overlay {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.522);
@@ -146,7 +145,7 @@ SLIDE OUT MOBILE MENU
     background-color: var(--Almost-white);
     height: 100vh;
     padding: 2.8rem 2.65rem;
-    position: absolute;
+    position: fixed;
     right: -24rem;
     top: 0;
     transition: all 0.3s;
@@ -242,6 +241,7 @@ SLIDE OUT MOBILE MENU
 @media screen and (min-width: 768px) {
     .hero {
         margin-top: 5.5rem;
+        padding-bottom: 5.5rem;
     }
 
     .hero-heading {

@@ -189,11 +189,10 @@ SLIDE OUT MOBILE MENU
 
 
 /**************
-     GROUP 1
+     HERO
 ***************/
-.group-1 {
-    display: flex;
-    flex-direction: column;
+.hero {
+    margin-top: 3.2rem;
 }
 
 
@@ -217,6 +216,8 @@ SLIDE OUT MOBILE MENU
     line-height: 26px;
     color: var(--Dark-grayish-blue);
     margin-top: 1.6rem;
+    position: relative;
+    bottom: 4px;
 }
 
 .hero__btn {
@@ -239,9 +240,8 @@ SLIDE OUT MOBILE MENU
 }
 
 @media screen and (min-width: 768px) {
-    .group-1__content {
-        display: flex;
-        justify-content: space-evenly;
+    .hero {
+        margin-top: 5.5rem;
     }
 
     .hero-heading {
@@ -250,6 +250,12 @@ SLIDE OUT MOBILE MENU
 
     .hero-tagline{
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1175px) {
+    .hero-heading {
+        margin-top: 0.2rem;
     }
 }
 
@@ -334,7 +340,7 @@ SLIDE OUT MOBILE MENU
     height: min-content;
     min-height: min-content;
     background-color: var(--Very-dark-blue);
-    padding: 2.4rem 2.4rem 1.2rem;
+    padding: 2.7rem 2.4rem 2rem;
     margin: 6rem 0 6.4rem 0;
 
 }
@@ -415,7 +421,7 @@ SLIDE OUT MOBILE MENU
 .top-article {
     display: flex;
     gap: 2.4rem;
-    margin-bottom: 3.2rem;
+    margin: 4rem 0 0 0;
 }
 
 
@@ -444,7 +450,7 @@ SLIDE OUT MOBILE MENU
 }
 .top-article__tagline {
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.8;
     color: var(--Dark-grayish-blue);
 }
 
